@@ -72,9 +72,9 @@ module Pod
         :prefix => prefix
       }).run
 
-      # There has to be a single file in the Classes dir
+      # There has to be a single file in the Sources dir
       # or a framework won't be created, which is now default
-      `touch Pod/Classes/ReplaceMe.m`
+      `touch Pod/Sources/ReplaceMe.m`
 
       `mv ./templates/ios/* ./`
 

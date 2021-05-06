@@ -48,9 +48,9 @@ module Pod
         :prefix => ""
       }).run
 
-      # There has to be a single file in the Classes dir
+      # There has to be a single file in the Sources dir
       # or a framework won't be created
-      `touch Pod/Classes/ReplaceMe.swift`
+      `touch Pod/Sources/ReplaceMe.swift`
 
       `mv ./templates/swift/* ./`
 
