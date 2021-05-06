@@ -175,8 +175,8 @@ module Pod
       FileUtils.mv "POD_README.md", "README.md"
       FileUtils.mv "POD_LICENSE", "LICENSE"
       FileUtils.mv "NAME.podspec", "#{pod_name}.podspec"
-      FileUtils.mv "install-pods.sh", "install-pods.sh"
-      FileUtils.mv "update-pods.sh", "update-pods.sh"
+#      FileUtils.mv "install-pods.sh", "install-pods.sh"
+#      FileUtils.mv "update-pods.sh", "update-pods.sh"
     end
 
     def rename_classes_folder
