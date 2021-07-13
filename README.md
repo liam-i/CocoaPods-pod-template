@@ -1,6 +1,10 @@
 pod-template
 ============
 
+## Using this pod-template
+
+`pod lib create <#PROJECT#> --template-url=https://github.com/liam-i/pod-template`
+
 An opinionated template for creating a Pod with the following features:
 
 - Git as the source control management system
