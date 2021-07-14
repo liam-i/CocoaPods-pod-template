@@ -30,9 +30,18 @@ module Pod
     end
 
     def welcome_message
-      unless @configurator.validate_user_details
-        run_setup_questions
-      end
+#      unless @configurator.validate_user_details
+#        run_setup_questions
+#      end
+        if @configurator.validate_user_details
+            custom = @configurator.ask_with_answers(yellow_bang + "your name is `" + @configurator.user_name + "` and your email is `" + @configurator.user_email + "`, do you want to change it", ["Yes", "No"]).to_sym
+            case custom
+              when :yes
+              run_setup_questions
+            end
+        else
+          run_setup_questions
+        end
 
       puts "\n------------------------------"
       puts ""
