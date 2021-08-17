@@ -187,6 +187,7 @@ module Pod
       `rm -rf .git`
       `git init`
       `git add -A`
+      `git branch -m master main`
     end
 
     def validate_user_details
